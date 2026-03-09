@@ -22,7 +22,7 @@ public static void main (String[]args) {
 
     m1(p1.or(p2),x);
 
-    
+
 }
 
 public static void m1(Predicate<Integer> p, int[] x){
