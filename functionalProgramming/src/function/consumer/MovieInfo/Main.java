@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Movie name "+ m.getName());
             System.out.println("Movie Hero "+ m.getHero());
             System.out.println("Movie Heroine "+ m.getHeroine());
-
+            System.out.println(" ");
         };
 
         for (Movie m : movies){
