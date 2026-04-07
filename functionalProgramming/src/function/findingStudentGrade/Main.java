@@ -2,6 +2,7 @@ package function.findingStudentGrade;
 
 import java.util.ArrayList;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class Main {
 
@@ -36,6 +37,10 @@ public class Main {
             System.out.println(student.getMarks());
             System.out.println(function.apply(student));
         }
+
+
+
+
 
     }
 }
