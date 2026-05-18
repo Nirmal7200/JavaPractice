@@ -20,13 +20,14 @@ public class EmployeeV2Controller {
     private EmployeeService employeeService;
 
     @PostMapping
-    public ResponseEntity<EmployeeEntity> save(@RequestBody EmployeeEntity employee){
+    public ResponseEntity<Employee> save(@RequestBody Employee employee){
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(employee);
+        return ResponseEntity.status(HttpStatus.CREATED).body(employeeService.save(employee));
     }
 
     @GetMapping
     public List<Employee> getAllEmployee(){
+
         return employeeService.getAllEmployee();
     }
 
